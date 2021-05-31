@@ -225,7 +225,7 @@ logFile << "\n" << dt << endl;
 				logFile << "Azile: You love " << you.like() << endl;
 				continue;
 			}
-
+			 
 			searchStr = "i love";
 			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
 				string inputlike = inputLine;
