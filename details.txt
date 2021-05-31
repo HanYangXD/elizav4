@@ -1,0 +1,7 @@
+name,asdad
+age,23
+height,30cm
+weight,30kg
+love,you
+dislike,nnn
+hate,asdd

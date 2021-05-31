@@ -1,0 +1,27 @@
+// blankprompts
+// things to output when the user just presses enter
+
+"blankPrompts",	"type something - or type bye to end ... ",
+"blankPrompts",	"are you shy? type something ... ",
+"blankPrompts",	"hello! anybody there? ...",
+"blankPrompts",	"yes? ...",
+"blankPrompts",	"you didn't type anything ... "
+
+// dontKnowPrompts
+// things to output when nothing matches the user input
+
+"dontKnowPrompts",	"you have to remember i am only a dumb machine ... ",
+"dontKnowPrompts",	"try something simpler ... ",
+"dontKnowPrompts",	"perhaps you need to add some more rules in my brain ...",
+"dontKnowPrompts",	"sorry, i'm struggling with this conversation ...",
+"dontKnowPrompts",	"i'm not very bright ... "
+
+// questionWords
+// words that start a question
+
+"questionWords",	"WHAT",
+"questionWords",	"WHERE",
+"questionWords",	"WHY",
+"questionWords",	"WHO",
+"questionWords",	"HOW",
+"questionWords",	"WHEN"

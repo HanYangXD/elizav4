@@ -1,0 +1,10 @@
+// azile switchables
+"you","i" 
+"i","you" 
+"me","you"
+"my","your"
+"your","my"
+"yours","mine"
+"mine","yours"
+"am", "are"
+"are", "am"
