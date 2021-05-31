@@ -965,3 +965,21 @@ Eliza: What is your name?
 You: hongyiiiiip
 You: hello
 Azile: hello, how are you? ...
+
+Tue Jun  1 03:11:54 2021
+
+Eliza: What is your name?
+You: hy
+You: lkasjdfkasd asd aszxc sa
+Azile: lkasjdfkasd asd aszxc sa? i'm not sure what you mean ...
+You: bye
+Azile: ok, goodbye ...
+
+Tue Jun  1 03:13:07 2021
+
+Eliza: What is your name?
+You: asd
+You: wawawa shshshs akdlajkdja d
+Azile: wawawa shshshs akdlajkdja d? i'm not sure what you mean ...
+You: bye
+Azile: ok, goodbye ...

@@ -72,6 +72,9 @@
     <Text Include="fileout.txt">
       <Filter>Data Files</Filter>
     </Text>
+    <Text Include="unknown.txt">
+      <Filter>Data Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="you.h">

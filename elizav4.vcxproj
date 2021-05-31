@@ -104,6 +104,7 @@
     <Text Include="phrases.txt" />
     <Text Include="switchables.txt" />
     <Text Include="synonyms.txt" />
+    <Text Include="unknown.txt" />
     <Text Include="users.txt" />
   </ItemGroup>
   <ItemGroup>

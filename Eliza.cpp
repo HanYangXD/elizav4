@@ -64,6 +64,8 @@ char* dt = ctime(&now);
 //cout << dt << endl; //display current datetime
 
 ofstream logFile("Logs.txt", ios::app);
+ofstream unknown("unknown.txt", ios::app);
+ofstream unknownLex("unknownLex.txt", ios::app);
 
 using namespace std;
 int main()
@@ -312,6 +314,9 @@ logFile << "\n" << dt << endl;
 				users.load("users.txt");
 				users.clear();
 				users.save("users.txt");
+				unknown.close();
+				unknownLex.close();
+				logFile.close();
 				required = false;
 				continue;
 			}
@@ -325,6 +330,7 @@ logFile << "\n" << dt << endl;
 			 // This is really bad. There must be something you can do with it!!!
 			 //	cout << "Azile could say ...." << endl;
 				cout << myResponse << endl;
+				unknown << inputLine + "\n";
 			//	cout << "Does that make sense????" << endl << endl;
 			//	cout << "Azile: i'm sorry i don't understand that" << endl;
 				you.noteTooDifficult();
@@ -798,6 +804,7 @@ string meaning;
 		}
 		else
 		{
+			unknownLex << searchWord << "\n";
 			cout << "No match for " << searchWord << endl;
 		}
 	}
