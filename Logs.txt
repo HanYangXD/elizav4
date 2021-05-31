@@ -935,3 +935,33 @@ You: my name is asdad
 Azile: hello asdad I will remember your name!
 You: what is my name
 Azile: Your name is asdad
+
+Tue Jun  1 02:40:24 2021
+
+
+Tue Jun  1 02:41:06 2021
+
+
+Tue Jun  1 02:41:57 2021
+
+
+Tue Jun  1 02:45:27 2021
+
+Eliza: What is your name?
+You: arren
+You: 
+Azile: are you shy? type something ...
+
+Tue Jun  1 02:47:46 2021
+
+Eliza: What is your name?
+You: desmond
+Azile: what am i to make of desmond ?
+Eliza: What is your name?
+
+Tue Jun  1 02:49:36 2021
+
+Eliza: What is your name?
+You: hongyiiiiip
+You: hello
+Azile: hello, how are you? ...

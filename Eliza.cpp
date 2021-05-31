@@ -93,7 +93,7 @@ logFile << "\n" << dt << endl;
 	// Load the switchables from file
 	switchables.load( "switchables.txt" );
 	// Load the dialogue patterns from file
-	/*patterns.load( "patterns.txt"  );*/
+	patterns.load( "patterns.txt"  );
 	// Load the LEX dictionary from file
 	lexWords.load( "lex.txt"  );
 	// Load the phrases from file
@@ -124,12 +124,30 @@ logFile << "\n" << dt << endl;
 	// *** 2. Main body of the program
 	// *** Keep going until they type bye
 	instructions();
+
+
+	bool firstInput = true;
+
 	while (required)
 	{
-		patterns.load("patterns.txt");
-		cout << "You: ";
-		readLine( cin, inputLine );
-		logFile << "You: " << inputLine << endl;
+		if (firstInput) {
+			cout << "What is your name?" << endl;
+			logFile << "Eliza: What is your name?" << endl;
+			cout << "You: ";
+			readLine(cin, inputLine);
+			logFile << "You: " << inputLine << endl;
+			you.name(inputLine);
+			cout << "Alright, I will remember your name!" << endl;
+			firstInput = false;
+			continue;
+		}
+		else {
+			cout << "You: ";
+			readLine(cin, inputLine);
+			logFile << "You: " << inputLine << endl;
+		}
+		//patterns.load("patterns.txt");
+		
 
 		if ( inputLine.length() == 0 )
 		{// then they haven't written anything so give them some sort of prompt

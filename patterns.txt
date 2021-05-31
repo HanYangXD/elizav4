@@ -1,3 +1,6 @@
+"what is my name","your name is hongyiiiiip"
+"what is my name","your name is desmond"
+"what is my name","your name is arren"
 "my name is @r1",				"hello @1 I will remember your name!" 
 "my age is @r1",				"alright! I will remember that you are @1 years old"
 "my height is @r1",				"alright! I will remember your height"
