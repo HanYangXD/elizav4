@@ -105,4 +105,3 @@
 "yuo",		"you"
 "'re",		"are"
 "'ve",		"have"
-"my name is", "wo shi"

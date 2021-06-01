@@ -133,13 +133,14 @@ logFile << "\n" << dt << endl;
 	while (required)
 	{
 		if (firstInput) {
-			cout << "What is your name?" << endl;
-			logFile << "Eliza: What is your name?" << endl;
+			cout << "Azile: Welcome to Eliza!\nWhat is your name?" << endl;
+			logFile << "Azile: Welcome to Eliza!\nWhat is your name?" << endl;
 			cout << "You: ";
 			readLine(cin, inputLine);
 			logFile << "You: " << inputLine << endl;
 			you.name(inputLine);
-			cout << "Alright, I will remember your name!" << endl;
+			cout << "Azile: Alright, I will remember your name!" << endl;
+			logFile << "Azile: Alright, I will remember your name!" << endl;
 			firstInput = false;
 			continue;
 		}
@@ -182,11 +183,14 @@ logFile << "\n" << dt << endl;
 				string inputname = inputLine;
 				inputname.erase(0, 11);
 				you.name(inputname);
+				string a = "\"what is my name\",\"your name is ";
+				string b = inputname + "\"";
+				patterns.add(a, b);
 
 			}
 			
 			searchStr = "what is my name";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			if ((lowercase(inputLine).find(searchStr) != std::string::npos) || (lowercase(inputLine).find("who am i") != std::string::npos)) {
 				cout << "Azile: Your name is " << you.name() << endl;
 				logFile << "Azile: Your name is " << you.name() << endl;
 				continue;
@@ -363,7 +367,7 @@ logFile << "\n" << dt << endl;
 // Project functions
 void instructions()
 {
-	cout << "Azile: You can call me Azile, as I'll be trying to interact with you." << endl;
+	cout << "Azile: Welcome to Eliza! You can call me Azile, as I'll be trying to interact with you." << endl;
 	cout << "Azile: Enter your statements at the prompt. When you have had enough type bye." << endl;
 	cout << endl;
 }
@@ -635,152 +639,9 @@ unsigned count = 0;
 		return false;
 	}
 
-	users.setToStart();
-	while (unMatched && users.hasData())
-	{// work through the known users looking for a pattern match. Stop looking if we run out of
-	 // users or we find a match.
+	
 
-		// tokenise the next pattern
-		tokenize(users.string1(), inTemplate, " \t");
-
-		components.clear();		// clear the @ components list
-		userInputIndex = 0;	// point at the start of the user input
-		isMatching = true;	// start trying to match this template
-
-		templateIndex = 0;		// start at the begining of the template string
-
-		while ((templateIndex < inTemplate.size()) && (userInputIndex < userInput.size()) && isMatching)
-		{// process each component in turn on the template
-
-			if ((templateIndex < inTemplate.size()) && (inTemplate[templateIndex].compare(0, 2, "@w") == 0))
-			{// then we have an @w command - just store the next word in the userInput as a component
-
-				if (userInputIndex < userInput.size())
-				{// then there is a word we can use ... actually this is implied from the test in the while
-				 // loop ... but it is a bit of defensive programming in case the code is changed.
-
-					components.push_back(userInput[userInputIndex]);
-					userInputIndex++;	// look at next user input word
-				}
-				else
-				{// no word so no match ... try the next template
-					isMatching = false;
-				}
-				templateIndex++;	// we processed that template word
-
-			}
-			else if ((templateIndex < inTemplate.size()) && (inTemplate[templateIndex].compare(0, 2, "@r") == 0))
-			{// then we have an @r command - just move the rest of the user input onto the next component
-			 // Q: What about the last space we added?
-
-				aComponent.erase();
-				while (userInputIndex < userInput.size())
-				{// create the component from the individual remaining tokens separated by spaces
-
-					// switch I to you, etc. This is to reflect the changes we make, e.g.
-					// user: i am not happy with you
-					// azile: you are not happy with me?
-					// NOTE: this is really simplistic and does not work very well. Sometimes "you" should become
-					//       "me", but also it could be replaced by "i", e.g.
-					// user: you are stupid
-					// azile: why am i am stupid?
-					if (switchables.contains(userInput[userInputIndex]))
-					{
-						userInput[userInputIndex] = switchables.meaning();
-					}
-					// now write the word or swapped word into the component string
-					aComponent = aComponent + userInput[userInputIndex] + ' ';
-					userInputIndex++;
-				}
-
-				if (aComponent.size() > 0)
-				{// then we had at least one word in the component so get rid of that last space
-
-					aComponent.erase(aComponent.size() - 1);
-					components.push_back(aComponent);	// put the entire string in the component
-
-					// we seem to have completed ok so log that and leave
-					unMatched = false;
-					isMatching = false;
-				}
-				else
-				{// there were no words so let's be pedantic and say we need to keep looking at users
-					isMatching = false;
-				}
-
-				templateIndex++;	// we processed that template word
-
-			}
-			else if (inTemplate[templateIndex].compare(0, 2, "@n") == 0)
-			{// then we have an @n command - just move the rest of the user input onto the next component
-			 // until we find a token in the input string matching the next template word
-
-				templateIndex++;			// look at next word
-
-				if (templateIndex < inTemplate.size())
-				{// then the template is ok and there is a next word to try to match
-
-					aComponent.erase();			// create an empty component
-					while ((userInputIndex < userInput.size()) && (inTemplate[templateIndex] != lowercase(userInput[userInputIndex])))
-					{// push the rest of the words into the component until we find the matching word
-
-						aComponent = aComponent + userInput[userInputIndex] + ' ';
-						userInputIndex++;
-					}
-
-					if (userInputIndex < userInput.size())
-					{// then we did find a matching word so package the component and move on
-						if (aComponent.size() > 0)
-						{// then we had at least one word in the component so get rid of that last space
-
-							aComponent.erase(aComponent.size() - 1);
-						}
-
-						components.push_back(aComponent);	// put the entire string in the component
-						userInputIndex++;	// move over the word we have matched
-						templateIndex++;	// look at the next part of the input template
-					}
-					else
-					{// no match so that template word was never matched
-						isMatching = false;
-					}
-				}
-				else
-				{// error in the template file ... what should we do with errors like this?
-					cout << "Azile: Oh dear! One of the users in my users.txt file is faulty ..." << endl;
-					cout << "Azile: " << users.string1() << " is missing a word after one of the @n parameters" << endl;
-					cout << "Azile: Could you be a dear and edit it for me? ... thanks ..." << endl;
-					// get the next pattern
-					isMatching = false;;
-				}
-			}
-			else
-			{// we are just matching the word
-
-				if ((userInputIndex < userInput.size()) && (templateIndex < inTemplate.size()) && (inTemplate[templateIndex] == lowercase(userInput[userInputIndex])))
-				{// then we have a match so move on to the next word
-					userInputIndex++;
-					templateIndex++;
-				}
-				else
-				{// no match so try the next template
-					isMatching = false;
-				}
-			}
-
-		}// end of processing one template
-
-
-		if ((userInputIndex < userInput.size()) || (templateIndex < inTemplate.size()))
-		{// then we didn't match - so check the next pattern
-			users.next();
-		}
-		else
-		{// we did - so get out
-			unMatched = false;
-		}
-
-	}// end of processing all templates
+	
 
 	
 

@@ -983,3 +983,90 @@ You: wawawa shshshs akdlajkdja d
 Azile: wawawa shshshs akdlajkdja d? i'm not sure what you mean ...
 You: bye
 Azile: ok, goodbye ...
+
+Tue Jun  1 17:18:23 2021
+
+Eliza: What is your name?
+You: my name is asd
+You: my name is s
+Azile: hello s I will remember your name!
+You: bye
+Azile: ok, goodbye ...
+
+Tue Jun  1 17:27:20 2021
+
+Eliza: What is your name?
+
+Tue Jun  1 17:29:45 2021
+
+Eliza: Welcome to Eliza!
+What is your name?
+You: 
+
+Tue Jun  1 17:31:45 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: han yang
+You: hello boss
+Azile: hello, how are you? ...
+You: can you tell me the date
+Azile: computer says no ...
+You: who am i
+Azile: i don't know, I have no memory ... but you should know ...
+You: 
+
+Tue Jun  1 18:06:18 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: wo shi aa
+Azile: Alright, I will remember your name!
+You: wo shi aa
+Azile: wo shi aa? i'm not sure what you mean ...
+You: i am 
+Azile: you are? i'm not sure what you mean ...
+You: i am a
+Azile: yo a
+You: wo shi a
+Azile: wo shi a? i'm not sure what you mean ...
+You: 
+
+Tue Jun  1 18:07:29 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: a
+Azile: Alright, I will remember your name!
+You: wo shi a
+Azile: wo shi a? i'm not sure what you mean ...
+You: i am a
+Azile: yo a
+
+Tue Jun  1 18:11:29 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: asdasdfdsdfghgfghjkj
+Azile: Alright, I will remember your name!
+You: hello hy
+
+Tue Jun  1 21:38:40 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: i am hungry
+Azile: yo hungry
+
+Tue Jun  1 21:39:13 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: hh
+Azile: Alright, I will remember your name!
+You: i am hungry
+Azile: in what way are you hungry ?
+You: you are stupid
+Azile: why do you think i am stupid ?

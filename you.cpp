@@ -94,19 +94,19 @@ void You::name( string pName )
 	//remove("patterns.txt");
 	//rename("fileout.txt", "patterns.txt");
 	
-	ifstream patternt;
-	patternt.open("patterns.txt");
-	fileout.open("fileout.txt");
-	
-	fileout << "\"what is my name\",\"your name is " + pName + "\"\n";
-	fileout << patternt.rdbuf();
+	//ifstream patternt;
 	//patternt.open("patterns.txt");
-	
-	patternt.close();
-	fileout.close();
+	//fileout.open("fileout.txt");
+	//
+	//fileout << "\"what is my name\",\"your name is " + pName + "\"\n";
+	//fileout << patternt.rdbuf();
+	////patternt.open("patterns.txt");
+	//
+	//patternt.close();
+	//fileout.close();
 
-	std::remove("patterns.txt");
-	std::rename("fileout.txt", "patterns.txt");
+	//std::remove("patterns.txt");
+	//std::rename("fileout.txt", "patterns.txt");
 
 	
 }
