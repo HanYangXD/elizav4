@@ -24,5 +24,6 @@ void tokenize(const string& str, vector<string>& tokens, const string& delimiter
 void stringTokenize(const string& str, vector<string>& tokens );
 void printTokens( vector<string>& tokens );
 void printTokens( vector<string>& tokens, char * separator );
+bool replace(std::string& str, const std::string& from, const std::string& to);
 
 #endif

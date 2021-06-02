@@ -49,6 +49,7 @@ void instructions();
 void replaceSynonyms( vector<string>& tokens, Dictionary & synonyms );
 bool canRespond( vector<string>& tokens, String2DVector & patterns, string & myResponse );
 void showLexValues( vector<string>& tokens );
+bool isSubsetOrEqual(std::vector<string> const& a, std::vector<string> const& b);
 
 // The global objects
 You you;
@@ -133,8 +134,8 @@ logFile << "\n" << dt << endl;
 	while (required)
 	{
 		if (firstInput) {
-			cout << "Azile: Welcome to Eliza!\nWhat is your name?" << endl;
-			logFile << "Azile: Welcome to Eliza!\nWhat is your name?" << endl;
+			cout << "Azile: Welcome to Eliza! What is your name?" << endl;
+			logFile << "Azile: Welcome to Eliza! What is your name?" << endl;
 			cout << "You: ";
 			readLine(cin, inputLine);
 			logFile << "You: " << inputLine << endl;
@@ -178,113 +179,112 @@ logFile << "\n" << dt << endl;
 			you.noteYouSpoke();
 			// what else would you like to do with their input?
 
-			string searchStr = "my name is";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				string inputname = inputLine;
-				inputname.erase(0, 11);
-				you.name(inputname);
-				string a = "\"what is my name\",\"your name is ";
-				string b = inputname + "\"";
-				patterns.add(a, b);
-
-			}
-			
-			searchStr = "what is my name";
-			if ((lowercase(inputLine).find(searchStr) != std::string::npos) || (lowercase(inputLine).find("who am i") != std::string::npos)) {
-				cout << "Azile: Your name is " << you.name() << endl;
-				logFile << "Azile: Your name is " << you.name() << endl;
-				continue;
-			}
+			//string searchStr = "my name is";
+			//if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			//	string inputname = inputLine;
+			//	inputname.erase(0, 11);
+			//	you.name(inputname);
+			//	/*string a = "\"what is my name\",\"your name is ";
+			//	string b = inputname + "\"";
+			//	patterns.add(a, b);*/
+			//}
+			//
 
 
-			//update age
-			searchStr = "my age is";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				string inputage = inputLine;
-				inputage.erase(0, 10);
-				you.age(inputage);
-			}
-
-			searchStr = "what is my age";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				cout << "Azile: Your age is " << you.age() << endl;
-				logFile << "Azile: Your age is " << you.age() << endl;
-				continue;
-			}
-
-			//update height
-			searchStr = "my height is";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				string inputheight = inputLine;
-				inputheight.erase(0, 13);
-				you.height(inputheight);
-			}
-
-			searchStr = "what is my height";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				cout << "Azile: Your height is " << you.height() << endl;
-				logFile << "Azile: Your height is " << you.height() << endl;
-				continue;
-			}
-
-			//update weight
-			searchStr = "my weight is";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				string inputheight = inputLine;
-				inputheight.erase(0, 13);
-				you.weight(inputheight);
-			}
-
-			searchStr = "what is my weight";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				cout << "Azile: Your weight is " << you.weight() << endl;
-				logFile << "Azile: Your weight is " << you.weight() << endl;
-				continue;
-			}
 
 
-			//update love
-			if (lowercase(inputLine).find("what i love") != std::string::npos) {
-				cout << "Azile: You love " << you.like() << endl;
-				logFile << "Azile: You love " << you.like() << endl;
-				continue;
-			}
-			 
-			searchStr = "i love";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				string inputlike = inputLine;
-				inputlike.erase(0, 7);
-				you.like(inputlike);
-			}
+			////searchStr = "what is my name";
+			////if ((lowercase(inputLine).find(searchStr) != std::string::npos) || (lowercase(inputLine).find("who am i") != std::string::npos)) {
+			////	cout << "Azile: Your name is " << you.name() << endl;
+			////	logFile << "Azile: Your name is " << you.name() << endl;
+			////	continue;
+			////}
 
-			//update dislike
-			searchStr = "i don't like";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				string inputheight = inputLine;
-				inputheight.erase(0, 13);
-				you.dislike(inputheight);
-			}
 
-			searchStr = "what i dislike";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				cout << "Azile: You dislike " << you.dislike() << endl;
-				logFile << "Azile: Your dislike " << you.dislike() << endl;
-				continue;
-			}
+			////update age
+			//searchStr = "my age is";
+			//if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			//	string inputage = inputLine;
+			//	inputage.erase(0, 10);
+			//	you.age(inputage);
+			//}
 
-			//update hate
-			if (lowercase(inputLine).find("what i hate") != std::string::npos) {
-				cout << "Azile: You hate " << you.hate() << endl;
-				logFile << "Azile: You hate" << you.hate() << endl;
-				continue;
-			}
+			//
 
-			searchStr = "i hate";
-			if (lowercase(inputLine).find(searchStr) != std::string::npos) {
-				string inputlike = inputLine;
-				inputlike.erase(0, 7);
-				you.hate(inputlike);
-			}
+			////update height
+			//searchStr = "my height is";
+			//if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			//	string inputheight = inputLine;
+			//	inputheight.erase(0, 13);
+			//	you.height(inputheight);
+			//}
+
+			////searchStr = "what is my height";
+			////if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			////	cout << "Azile: Your height is " << you.height() << endl;
+			////	logFile << "Azile: Your height is " << you.height() << endl;
+			////	continue;
+			////}
+
+			////update weight
+			//searchStr = "my weight is";
+			//if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			//	string inputheight = inputLine;
+			//	inputheight.erase(0, 13);
+			//	you.weight(inputheight);
+			//}
+
+			////searchStr = "what is my weight";
+			////if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			////	cout << "Azile: Your weight is " << you.weight() << endl;
+			////	logFile << "Azile: Your weight is " << you.weight() << endl;
+			////	continue;
+			////}
+
+
+			////update love
+			////if (lowercase(inputLine).find("what i love") != std::string::npos) {
+			////	cout << "Azile: You love " << you.like() << endl;
+			////	logFile << "Azile: You love " << you.like() << endl;
+			////	continue;
+			////}
+			//searchStr = "i love";
+			//if (lowercase(inputLine).find("what do i love") != std::string::npos) {
+			//	//do nothing
+			//}else if(lowercase(inputLine).find(searchStr) != std::string::npos) {
+			//	string inputlike = inputLine;
+			//	inputlike.erase(0, 7);
+			//	you.like(inputlike);
+			//}
+
+			////update dislike
+			//searchStr = "i don't like";
+			//if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			//	string inputheight = inputLine;
+			//	inputheight.erase(0, 13);
+			//	you.dislike(inputheight);
+			//}
+
+			////searchStr = "what i dislike";
+			////if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			////	cout << "Azile: You dislike " << you.dislike() << endl;
+			////	logFile << "Azile: Your dislike " << you.dislike() << endl;
+			////	continue;
+			////}
+
+			////update hate
+			////if (lowercase(inputLine).find("what i hate") != std::string::npos) {
+			////	cout << "Azile: You hate " << you.hate() << endl;
+			////	logFile << "Azile: You hate" << you.hate() << endl;
+			////	continue;
+			////}
+
+			//searchStr = "i hate";
+			//if (lowercase(inputLine).find(searchStr) != std::string::npos) {
+			//	string inputlike = inputLine;
+			//	inputlike.erase(0, 7);
+			//	you.hate(inputlike);
+			//}
 
 			
 
@@ -305,12 +305,117 @@ logFile << "\n" << dt << endl;
 			tokenize( inputLineCopy, tokens, " \t" );					// break up into words
 			replaceSynonyms( tokens, synonyms );						// replace synonyms
 			//showLexValues( tokens );									// show parts of speech
+			
+			
+
+			//showLexValues(tokens2);
+
+			//tokenise and check input
+			
+			
+
+
+
+			/*try {
+				if(includes(tokens.begin(), tokens.end(), tokens2.begin(), tokens2.end())) 
+					cout << "found" << endl;
+			}
+			catch(exception e) {
+				cout << "nofound" << endl;
+			}*/
 
 			// Process them
 			if ( didRespond = canRespond( tokens, patterns, myResponse ) )
 			{// then it matches one of the patterns exactly
+				vector <string> tokens2;
+				string tempstr = "my name is";
+				if (myResponse.find("#userName") != std::string::npos) {
+					replace(myResponse, "#userName", you.name());
+				}
+				else {
+					tokenize(removePunctuation(tempstr, "\'"), tokens2, " \t");
+					if (isSubsetOrEqual(tokens2, tokens)) {
+						string inputname = inputLine;
+						inputname.erase(0, 11);
+						you.name(inputname);
+					}
+				}
+				if (myResponse.find("#userAge") != std::string::npos) {
+					replace(myResponse, "#userAge", you.age());
+				}
+				else {
+					tokenize("my age is", tokens2, " \t");
+					if (isSubsetOrEqual(tokens2, tokens)) {
+						string inputage = inputLine;
+						inputage.erase(0, 10);
+						you.age(inputage);
+					}
+				}
+				if (myResponse.find("#userHeight") != std::string::npos) {
+					replace(myResponse, "#userHeight", you.height());
+				}
+				else {
+					tokenize("my height is", tokens2, " \t");
+					if (isSubsetOrEqual(tokens2, tokens)) {
+						string inputheight = inputLine;
+						inputheight.erase(0, 13);
+						you.height(inputheight);
+					}
+				}
+				if (myResponse.find("#userWeight") != std::string::npos) {
+					replace(myResponse, "#userWeight", you.weight());
+				}
+				else {
+					tokenize("my weight is", tokens2, " \t");
+					if (isSubsetOrEqual(tokens2, tokens)) {
+						string inputheight = inputLine;
+						inputheight.erase(0, 13);
+						you.weight(inputheight);
+					}
+				}
+				if (myResponse.find("#userLove") != std::string::npos) {
+					replace(myResponse, "#userLove", you.like());
+				}
+				else {
+					tokenize("what do i love", tokens2, " \t");
+					if (isSubsetOrEqual(tokens2, tokens)) {
+						//do nothing
+					}
+					else {
+						tokenize("i love", tokens2, " \t");
+						if (isSubsetOrEqual(tokens2, tokens)) {
+							string inputlike = inputLine;
+							inputlike.erase(0, 7);
+							you.like(inputlike);
+						}
+					}
+				}
+				if (myResponse.find("#userDislike") != std::string::npos) {
+					replace(myResponse, "#userDislike", you.dislike());
+				} {
+					tokenize("i dislike", tokens2, " \t");
+					if (isSubsetOrEqual(tokens2, tokens)) {
+						string inputdlike = inputLine;
+						inputdlike.erase(0, 10);
+						you.dislike(inputdlike);
+					}
+				}
+				if (myResponse.find("#userHate") != std::string::npos) {
+					replace(myResponse, "#userHate", you.hate());
+				}
+				else {
+					tokenize("i hate", tokens2, " \t");
+					if (isSubsetOrEqual(tokens2, tokens)) {
+						string inputhate = inputLine;
+						inputhate.erase(0, 7);
+						you.hate(inputhate);
+					}
+				}
+
+				logFile << myResponse << endl;
 				cout << myResponse << endl;
 			}
+			
 
 			// special cases			
 			if (uppercase(tokens[0]) == "BYE" )
@@ -333,8 +438,17 @@ logFile << "\n" << dt << endl;
 			{// I can't cope with it
 			 // This is really bad. There must be something you can do with it!!!
 			 //	cout << "Azile could say ...." << endl;
-				cout << myResponse << endl;
-				unknown << inputLine + "\n";
+				cout << myResponse << ", can you teach me what should i reply next time? (y/n)" << endl;
+				unknown << myResponse + ", can you teach me what should i reply next time? (y/n)" << endl;
+				string patternResponse;
+				readLine(cin, patternResponse);
+				if (patternResponse._Equal("y")) {
+					cout << "Azile: what should i reply next time?" << endl;
+					unknown<< "Azile: what should i reply next time?" << endl;
+					readLine(cin, patternResponse);
+					patterns.add(inputLine, patternResponse);
+					patterns.save("patterns.txt");
+				}
 			//	cout << "Does that make sense????" << endl << endl;
 			//	cout << "Azile: i'm sorry i don't understand that" << endl;
 				you.noteTooDifficult();
@@ -614,7 +728,6 @@ unsigned count = 0;
 			}
 			
 		}
-		logFile << myResponse << endl;
 		return true;
 
 	}
@@ -671,3 +784,10 @@ string meaning;
 	}
 }
 
+bool isSubsetOrEqual(std::vector<string> const& a, std::vector<string> const& b) {
+	for (auto const& av : a) {
+		if (std::find(b.begin(), b.end(), av) == b.end())
+			return false;
+	}
+	return true;
+}

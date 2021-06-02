@@ -1070,3 +1070,500 @@ You: i am hungry
 Azile: in what way are you hungry ?
 You: you are stupid
 Azile: why do you think i am stupid ?
+
+Tue Jun  1 23:11:20 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: what is my age
+Azile: you are #userAge years old
+
+Tue Jun  1 23:13:16 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: yuu
+Azile: Alright, I will remember your name!
+You: what is my name
+Azile: Your name is yuu
+You: what is my weight
+Azile: Your weight is 30kg
+You: what is my height
+Azile: Your height is 30cm
+You: what do i love
+Azile: you love #userLove
+You: 
+
+Tue Jun  1 23:15:00 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: uyy
+Azile: Alright, I will remember your name!
+You: what is my name
+Azile: your name is #userName
+You: what is my age
+Azile: you are #userAge years old
+You: what is my height
+Azile: you are #userHeight tall
+You: what is my weight
+Azile: your weight is #userWeight
+You: what do i love
+Azile: you love #userLove
+You: what i like
+Azile: what you like? i'm not sure what you mean ...
+You: what do i dislike
+Azile: you dislike #userDislike
+You: what do i hate
+Azile: you hate #userHate
+
+Tue Jun  1 23:17:53 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: desdes
+Azile: Alright, I will remember your name!
+You: i love what
+Azile: alright! I will remember what you love
+You: what i love
+Azile: what you love? i'm not sure what you mean ...
+You: what i like
+Azile: what you like? i'm not sure what you mean ...
+
+Tue Jun  1 23:46:06 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+You: asdasd
+Azile: Alright, I will remember your name!
+You: what do i love
+Azile: you love #userLove
+You: what do i love
+Azile: you love #userLove
+You: i love zzz
+Azile: alright! I will remember what you love
+You: what do i love
+Azile: you love #userLove
+
+Tue Jun  1 23:46:44 2021
+
+Azile: Welcome to Eliza!
+What is your name?
+
+Tue Jun  1 23:48:56 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hyy
+Azile: Alright, I will remember your name!
+You: hello
+Azile: hello, how are you? ...
+
+Tue Jun  1 23:49:54 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: whh
+Azile: Alright, I will remember your name!
+You: wo ai taaa
+Azile: wo ai taaa? i'm not sure what you mean ...
+You: bye
+Azile: ok, goodbye ...
+
+Wed Jun  2 00:39:54 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hh
+Azile: Alright, I will remember your name!
+You: if i am smart
+Azile: if you are smart then? ...
+
+Wed Jun  2 01:04:52 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: qwe 
+Azile: qwe? i'm not sure what you mean ...
+You: qwe
+Azile: ewq
+You: will will i slap you
+Azile: the feeling is mutual
+You: will will i slap you
+Azile: the feeling is mutual
+You: 
+
+Wed Jun  2 01:10:17 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: will will i slap slap you
+Azile: will will you slap slap i? i'm not sure what you mean ...
+You: will i slap slap you
+Azile: will you slap slap i? i'm not sure what you mean ...
+You: will will i slap you
+Azile: will will slap
+You: i make soup
+Azile: you make soup? i'm not sure what you mean ...
+You: i makes soup
+Azile: how does i make soup ?
+You: he makes soup
+Azile: how does he make soup ?
+You: 
+
+Wed Jun  2 10:59:31 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is noo
+Azile: hello noo I will remember your name!
+You: my nae is noo
+Azile: are you pleased that your nae is noo ?
+You: no
+Azile: never mind, let's change the subject ...
+You: no
+Azile: never mind, let's change the subject ...
+You: no
+Azile: never mind, let's change the subject ...
+You: no
+Azile: never mind, let's change the subject ...
+You: 
+
+Wed Jun  2 11:00:50 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is hii
+Azile: are you pleased that your name is hii ?
+You: 
+
+Wed Jun  2 11:02:45 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hh
+Azile: Alright, I will remember your name!
+You: my name is hahha
+Azile: are you pleased that your name is hahha ?
+You: ha ha ha hahaha
+Azile: ha ha ha hahaha? i'm not sure what you mean ...
+
+Wed Jun  2 11:14:29 2021
+
+Azile: Welcome to Eliza! What is your name?
+
+Wed Jun  2 11:14:40 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: hello how are you
+
+Wed Jun  2 11:25:16 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is
+Azile: your name is? i'm not sure what you mean ...
+
+Wed Jun  2 11:27:48 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name
+
+Wed Jun  2 11:28:05 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is 
+
+Wed Jun  2 11:29:00 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is
+
+Wed Jun  2 11:29:16 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is hh
+Azile: are you pleased that your name is hh ?
+
+Wed Jun  2 11:30:14 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is s
+Azile: hello s I will remember your name!
+
+Wed Jun  2 11:30:45 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is
+Azile: your name is? i'm not sure what you mean ...
+
+Wed Jun  2 11:31:17 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is
+Azile: your name is? i'm not sure what you mean ...
+
+Wed Jun  2 11:31:34 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: my name is
+Azile: your name is? i'm not sure what you mean ...
+You: i am hh
+Azile: in what way are you hh ?
+You: my name is hy
+Azile: hello hy I will remember your name!
+
+Wed Jun  2 11:35:53 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hh
+Azile: Alright, I will remember your name!
+You: my name is hh
+Azile: hello hh I will remember your name!
+You: my name is
+Azile: your name is? i'm not sure what you mean ...
+You: 
+Azile: hello! anybody there? ...
+
+Wed Jun  2 11:36:24 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: asd
+Azile: Alright, I will remember your name!
+You: my name is hhyasd
+Azile: hello hhyasd I will remember your name!
+
+Wed Jun  2 11:53:16 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: han yang
+Azile: Alright, I will remember your name!
+You: my name is hy
+Azile: hello hy I will remember your name!
+You: my age is 232
+Azile: alright! I will remember that you are 232 years old
+You: my height is 330cm
+Azile: alright! I will remember your height
+You: my weight is 50kg
+Azile: alright! I will remember your weight
+You: i love sleep
+Azile: alright! I will remember what you love
+You: i dont like afl
+Azile: you do not like afl? i'm not sure what you mean ...
+You: i don't like afl
+Azile: you do not like afl? i'm not sure what you mean ...
+You: i hate afk
+Azile: alright! I will remember what you hate
+You: i dislike sleeeep
+Azile: alright! I will remember what you don't like
+You: bye
+Azile: ok, goodbye ...
+
+Wed Jun  2 11:55:23 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hyys
+Azile: Alright, I will remember your name!
+You: i dislike sleeeapsdk
+Azile: alright! I will remember what you don't like
+You: what do i love
+Azile: you love sleep
+
+Wed Jun  2 11:56:05 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: what i dont like
+Azile: what you do not like? i'm not sure what you mean ...
+You: what i don't like
+Azile: what you do not like? i'm not sure what you mean ...
+You: what do i dont like
+Azile: what do you do not like? i'm not sure what you mean ...
+You: what do i don't like
+Azile: what do you do not like? i'm not sure what you mean ...
+
+Wed Jun  2 11:56:54 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hy
+Azile: Alright, I will remember your name!
+You: what do i dont like
+Azile: what do you do not like? i'm not sure what you mean ...
+You: what do i don't like
+Azile: what do you do not like? i'm not sure what you mean ...
+You: what i dislike
+Azile: what you dislike? i'm not sure what you mean ...
+You: what is my name
+Azile: your name is name
+You: what is my age
+Azile: you are  years old
+You: my name is hy
+Azile: hello hy I will remember your name!
+You: what is my name
+Azile: your name is name
+You: what is my name
+Azile: your name is name
+You: what is my name
+Azile: your name is name
+You: my name is hy
+Azile: hello hy I will remember your name!
+You: what is is my name
+Azile: i don't know ... what is is your name ? ... where could you find out? ...
+You: what is my height
+Azile: you are ight tall
+
+Wed Jun  2 12:00:45 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: hyyy
+Azile: Alright, I will remember your name!
+You: my name is hh
+Azile: hello hh I will remember your name!
+You: what is my name
+Azile: your name is name
+
+Wed Jun  2 12:02:38 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: asd
+Azile: Alright, I will remember your name!
+You: what is my name
+Azile: your name is asd
+You: my name is sssi
+Azile: hello sssi I will remember your name!
+You: what is my age
+Azile: you are 232 years old
+You: my age is 23
+Azile: alright! I will remember that you are 23 years old
+
+Wed Jun  2 12:03:58 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: asddd
+Azile: Alright, I will remember your name!
+You: my name is hhh
+Azile: are you pleased that your name is hhh ?
+You: i hate asd
+Azile: you hate asd? i'm not sure what you mean ...
+
+Wed Jun  2 12:05:08 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: asdasdsad
+Azile: Alright, I will remember your name!
+You: my name is hh
+Azile: are you pleased that your name is hh ?
+You: what is my name
+Azile: your name is hh
+
+Wed Jun  2 12:06:12 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: jjj
+Azile: Alright, I will remember your name!
+You: what is my name
+Azile: your name is jjj
+You: my name is kkk
+Azile: are you pleased that your name is kkk ?
+You: what is my name
+Azile: your name is kkk
+You: my age is 23
+Azile: are you pleased that your age is 23 ?
+You: what is my age
+Azile: you are 23 years old
+
+Wed Jun  2 12:07:49 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: soda
+Azile: Alright, I will remember your name!
+You: what is my name
+Azile: your name is soda
+You: what is my age
+Azile: you are 23 years old
+You: what is  my height
+Azile: you are 330cm tall
+You: what is my weight
+Azile: your weight is 50kg
+You: what do i love
+Azile: you love sleep
+You: what do i dislike
+Azile: what do you dislike? i'm not sure what you mean ...
+You: what u dont like
+Azile: what i do not like? i'm not sure what you mean ...
+You: what do i don't like
+Azile: what do you do not like? i'm not sure what you mean ...
+You: what do i dislike
+Azile: what do you dislike? i'm not sure what you mean ...
+You: what do i hate
+Azile: you hate afk
+
+Wed Jun  2 12:09:32 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: ss
+Azile: Alright, I will remember your name!
+You: what do i dislike
+Azile: you dislike e
+You: my name is sd
+Azile: are you pleased that your name is sd ?
+
+Wed Jun  2 12:10:32 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: sd
+Azile: Alright, I will remember your name!
+You: my name is dd
+Azile: hello dd I will remember your name!
+You: my age is 234
+Azile: alright! I will remember that you are 234 years old
+You: my height is 2345
+Azile: alright! I will remember your height
+You: my weight is 23456
+Azile: alright! I will remember your weight
+You: i love 233
+Azile: alright! I will remember what you love
+You: i dislike 322
+Azile: alright! I will remember what you don't like
+You: i hate 213
+Azile: alright! I will remember what you hate
+
+Wed Jun  2 12:11:43 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: asd
+Azile: Alright, I will remember your name!
+You: i dislike 322
+Azile: alright! I will remember what you don't like
+You: i dislike 322
+Azile: alright! I will remember what you don't like
+
+Wed Jun  2 12:12:39 2021
+
+Azile: Welcome to Eliza! What is your name?
+You: s
+Azile: Alright, I will remember your name!
+You: i dislike 322
+Azile: alright! I will remember what you don't like

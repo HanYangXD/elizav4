@@ -1,7 +1,7 @@
-name,hh
-age,23
-height,30cm
-weight,30kg
-love,you
-dislike,nnn
-hate,asdd
+name,s
+age,234
+height,2345
+weight,23456
+love,233
+dislike,322
+hate,213
